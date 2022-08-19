@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body{
+    background-color: #f6f8fa !important;
+}
+
+.nav-back{
+    background: #24046b !important;
+    box-shadow: 0 2px 4px 0px rgb(34 67 152)
+}
+
+.bn632-hover.bn26:disabled{
+cursor: no-drop;
+
+}
+
+
+.bn632-hover {
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn26 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+
+
+
+
+  .shade{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+
+  .head-bg{
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+  }
+
+  .bd-color{
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+
+  }
+
+  .box {
+    height: 200px;
+    padding: 10px;
+    margin-top: 24px;
+    /* box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px; */
+    /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .pr{
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .inputval.ng-invalid.ng-touched{
+    border: 1px solid red;
+  }
+
+  .help-block{
+    color: red;
+  }
+
+  .ftc{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .box{
+      height: auto;
+    }
+  }
+    

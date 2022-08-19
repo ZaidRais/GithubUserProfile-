@@ -1,0 +1,33 @@
+<div *ngIf="githubRepos" class="card my-5 shade">
+    <div class="card-header head-bg text-white text-center">
+        <h4>Github Repositories</h4>
+    </div>
+    <div class="card-body">
+        <!-- <ul class="list-group">
+            <li *ngFor="let repo of githubRepos | paginate: { itemsPerPage: 10, currentPage: p }" class="list-group d-flex justify-content-between flex-row mt-2">
+                <a [href]="repo.html_url" class="text-primary fw-bold" target="_blank">{{repo.name}}</a>
+                <span class="badge bg-success">{{repo.stargazers_count}} stars</span>
+                <span class="badge bg-warning">{{repo.watchers_count}}stars</span>
+            </li>
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </ul> -->
+        <div class="row">
+            <div *ngFor="let repo of githubRepos | paginate: { itemsPerPage: 10, currentPage: p }"  class="col-md-6">
+                <div class="box border ">
+                    <h4>
+                        <a [href]="repo.html_url" class="text-primary fw-bold pr" target="_blank">{{repo.name}}</a>
+                    </h4>
+                    <label class="fw-bold">Description : </label>
+                    <p>Description : {{repo.description}}</p>
+                    <span class="badge bg-primary me-3">language : {{repo.language}} </span>
+                    <span class="badge bg-success me-3">{{repo.stargazers_count}} stars</span>
+                    <span class="badge bg-warning me-3">{{repo.watchers_count}} stars</span>
+                </div>
+                
+            </div>
+            <div class="forpage d-flex justify-content-center mt-5">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</div>

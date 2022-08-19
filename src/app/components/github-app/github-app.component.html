@@ -1,0 +1,52 @@
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="card shade mb-5">
+                <div class="card-header head-bg text-white text-center">
+                    <h4>Github User Search</h4>
+                </div>
+                <div class="card-body">
+                    <form (submit)="searchUser()" #f="ngForm">
+                        <div class="form-group text-center">
+                            <input  [(ngModel)]="githubUserQuery" ngModel name="user" #search="ngModel" type="search" class="form-control text-center inputval" placeholder=" Search github user here" required>
+                            <span class="help-block" *ngIf="!search.valid && search.touched">Please Enter a Valid Github Username TO Search</span>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-3">
+                            <input type="submit" value="Search" class="bn632-hover bn26 " [disabled]="!f.valid">
+                            
+                         </div>
+        
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <app-github-profile [githubProfile]="githubProfile" ></app-github-profile>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <app-github-repos [githubRepos]="githubRepos"></app-github-repos>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

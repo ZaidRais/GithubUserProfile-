@@ -1,0 +1,10 @@
+<div class="card p-2 shade py-3">
+    <img [src]="githubProfile.avatar_url" class="card-img-top img-thumbnail rounded-circle bd-color" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{githubProfile.name}}</h5>
+      <p class="card-text"> <samp class="fw-bold">Bio:</samp>{{githubProfile.bio}}</p>
+      <a [href]="githubProfile.html_url" target="_blank" class="btn btn-primary btn-sm">Profile</a>
+    </div>
+  </div>
+
+  
